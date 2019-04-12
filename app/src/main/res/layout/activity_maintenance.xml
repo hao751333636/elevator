@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:background="@color/actionbar">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/actionbar_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:text="@string/activity_maintenance"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivScanning"
+            android:layout_width="@dimen/max_padding"
+            android:layout_height="@dimen/max_padding"
+            android:src="@mipmap/scanning_48dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/large_margin"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rlMaintenance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvMaintenance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="维保记录"
+                android:textColor="@color/black2"
+                android:textSize="@dimen/dimen_16sp"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tvMaintenance1"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/min_margin"
+                android:background="@color/actionbar"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlPending"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvPending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="待查记录"
+                android:textColor="@color/black2"
+                android:textSize="@dimen/dimen_16sp"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tvPending1"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/min_margin"
+                android:background="@color/actionbar"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlMissed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvMissed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="漏查记录"
+                android:textColor="@color/black2"
+                android:textSize="@dimen/dimen_16sp"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tvMissed1"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/min_margin"
+                android:background="@color/actionbar"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlHistory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="维保历史"
+                android:textColor="@color/black2"
+                android:textSize="@dimen/dimen_16sp"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tvHistory1"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/min_margin"
+                android:background="@color/actionbar"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSign"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvSign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="签名记录"
+                android:textColor="@color/black2"
+                android:textSize="@dimen/dimen_16sp"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tvSign1"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/min_margin"
+                android:background="@color/actionbar"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="?android:actionBarDivider"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpMaintenance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_8">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.这是标题"
+        android:textColor="@color/black1"
+        android:textSize="@dimen/dimen_14sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlHandle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tiny_padding">
+
+        <ImageView
+            android:id="@+id/ivNetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_maintenance_photo1" />
+
+        <ImageView
+            android:id="@+id/ivOffLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivNetwork"
+            android:src="@mipmap/ic_maintenance_photo2" />
+
+        <ImageView
+            android:id="@+id/ivLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/tiny_padding"
+            android:layout_toRightOf="@+id/ivOffLine"
+            android:src="@mipmap/ic_maintenance_photo2" />
+
+        <ImageView
+            android:id="@+id/ivCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_maintenance_photograph" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/item_ele_list_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_margin"
+        android:background="@drawable/radius_conner_listbackgrout"
+        android:hint="备注:"
+        android:maxLength="255"
+        android:padding="@dimen/small_padding"
+        android:textColor="@color/black1"
+        android:textSize="@dimen/dimen_14sp" />
+
+    <LinearLayout
+        android:id="@+id/llTemplate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tiny_padding"
+        android:layout_marginTop="@dimen/normal_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/min_padding"
+            android:layout_marginLeft="@dimen/normal_padding"
+            android:layout_weight="1"
+            android:background="@drawable/edge_orange"
+            android:gravity="center"
+            android:padding="@dimen/tiny_padding"
+            android:text="确认"
+            android:textColor="@color/text_yellow"
+            android:textSize="@dimen/dimen_14sp" />
+    </LinearLayout>
+</LinearLayout>

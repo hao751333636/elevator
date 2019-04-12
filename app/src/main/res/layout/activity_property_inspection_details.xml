@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/drawable_bg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:background="@color/actionbar">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/actionbar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:text="@string/activity_property_inspection_details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivScanning"
+            android:layout_width="@dimen/max_padding"
+            android:layout_height="@dimen/max_padding"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/large_margin"
+            android:src="@mipmap/scanning_48dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!--<ScrollView-->
+    <!--android:id="@+id/scrollView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<com.baidu.mapapi.map.TextureMapView-->
+    <!--android:id="@+id/bmapView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dimen_180" />-->
+
+    <!--<com.sinodom.elevator.view.NoScrollListView-->
+    <!--android:id="@+id/lvRecord"-->
+    <!--android:layout_marginTop="@dimen/dimen_8"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:divider="@color/c_bg_light1"-->
+    <!--android:dividerHeight="@dimen/dimen_8"-->
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--</ScrollView>-->
+
+
+
+    <ListView
+        android:id="@+id/lvRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/drawable_bg"
+        android:dividerHeight="@dimen/dimen_8" />
+
+
+</LinearLayout>

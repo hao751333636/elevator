@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- expandableList 的二级条目布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/view_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5"
+            android:text="title"
+            android:textSize="@dimen/dimen_20sp"/>
+
+        <RadioGroup
+            android:id="@+id/item_ele_list_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5"
+            android:background="@drawable/radius_conner_listbackgrout"
+            >
+
+            <RadioButton
+                android:id="@+id/item_ele_radio_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_5"
+                android:text="A、合格"
+                android:textColor="#333"
+                android:textSize="@dimen/dimen_18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:background="#3333"/>
+
+            <RadioButton
+                android:id="@+id/item_ele_radio_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_5"
+                android:text="B、不合格"
+                android:textColor="#333"
+                android:textSize="@dimen/dimen_18sp"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/item_ele_list_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5"
+            android:background="@drawable/radius_conner_backgroud"
+            android:hint="写下您的意见"
+            android:textSize="@dimen/dimen_18sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

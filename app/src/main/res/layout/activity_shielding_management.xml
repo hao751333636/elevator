@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/drawable_bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:background="@color/actionbar">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/actionbar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:text="@string/activity_shielding_management"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dimen_2">
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/internet_alarm_search" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ivSearch"
+            android:text="高级查询"
+            android:textColor="@color/black1"
+            android:textSize="@dimen/dimen_14sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvShowcasing"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="?android:actionBarDivider" />
+
+    <ImageView
+        android:id="@+id/ivShowcasing"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150">
+
+        <LinearLayout
+            android:id="@+id/llDrawing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/mChart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tiny_padding"
+                    android:src="@mipmap/inspection_check" />
+
+                <TextView
+                    android:id="@+id/tvPercentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/min_padding"
+                    android:layout_toRightOf="@+id/ivPercent"
+                    android:text=""
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/dimen_14sp" />
+
+                <TextView
+                    android:id="@+id/tvPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tiny_padding"
+                    android:layout_toRightOf="@+id/tvPercentName"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/dimen_14sp" />
+
+
+                <TextView
+                    android:id="@+id/tvNot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/tiny_padding"
+                    android:text=""
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/dimen_14sp" />
+
+                <ImageView
+                    android:id="@+id/ivNot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/min_padding"
+                    android:layout_marginTop="@dimen/min_padding"
+                    android:layout_toLeftOf="@+id/tvNot"
+                    android:src="@mipmap/inspection_prompt2" />
+
+                <TextView
+                    android:id="@+id/tvAlready"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/tiny_padding"
+                    android:layout_toLeftOf="@+id/ivNot"
+                    android:text=""
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/dimen_14sp" />
+
+                <ImageView
+                    android:id="@+id/ivAlready"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/min_padding"
+                    android:layout_marginTop="@dimen/min_padding"
+                    android:layout_toLeftOf="@+id/tvAlready"
+                    android:src="@mipmap/inspection_prompt1" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/psWait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_weight="1">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/lvInternetAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlTitle"
+            android:divider="@color/drawable_bg"
+            android:dividerHeight="@dimen/dimen_8"
+            ptr:ptrListViewExtrasEnabled="false" />
+
+        <include layout="@layout/item_no_data" />
+
+    </RelativeLayout>
+</LinearLayout>

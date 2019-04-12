@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10"
+        android:background="@color/drawable_bg"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_15"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_monitor_equipment"
+            android:drawablePadding="@dimen/dimen_5"
+            android:gravity="center_vertical"
+            android:text="设备号："
+            android:textColor="@color/black2"
+            android:textSize="@dimen/dimen_14sp" />
+
+        <TextView
+            android:id="@+id/tvEquipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/dimen_14sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="?android:actionBarDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_15"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_monitor_code"
+            android:drawablePadding="@dimen/dimen_5"
+            android:gravity="center_vertical"
+            android:text="当前设备注册代码："
+            android:textColor="@color/black2"
+            android:textSize="@dimen/dimen_14sp" />
+
+        <TextView
+            android:id="@+id/tvCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/dimen_14sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="?android:actionBarDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_15"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_monitor_input"
+            android:drawablePadding="@dimen/dimen_5"
+            android:gravity="center_vertical"
+            android:text="待输入的注册代码"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/dimen_14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radius_conner_backgroud2"
+                android:hint="请输入20位电梯注册代码"
+                android:inputType="number"
+                android:maxLength="20"
+                android:paddingBottom="@dimen/dimen_8"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:paddingTop="@dimen/dimen_8"
+                android:text=""
+                android:textColor="@color/black2"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <TextView
+                android:id="@+id/tvInput"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:background="@drawable/btn_blue"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_15"
+                android:paddingRight="@dimen/dimen_15"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <TextView
+                android:id="@+id/tvScan"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:background="@drawable/btn_blue"
+                android:drawableLeft="@mipmap/scanning_36dp"
+                android:drawablePadding="@dimen/dimen_5"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:text="扫码"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_14sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="?android:actionBarDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_15"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_monitor_address"
+            android:drawablePadding="@dimen/dimen_5"
+            android:gravity="center_vertical"
+            android:text="电梯地址："
+            android:textColor="@color/black2"
+            android:textSize="@dimen/dimen_14sp" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black2"
+            android:textSize="@dimen/dimen_14sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="?android:actionBarDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_15">
+
+        <TextView
+            android:id="@+id/tvStart"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_weight="1"
+            android:background="@drawable/btn_yellow"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15"
+            android:text="维保开始"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/tvEnd"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:background="@drawable/btn_blue"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15"
+            android:text="维保结束"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:background="@drawable/btn_blue"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10">
+
+        <TextView
+            android:id="@+id/tvStateImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_monitor_2" />
+
+        <TextView
+            android:id="@+id/tvState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:gravity="center"
+            android:text="维保已结束，谢谢！"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_14sp" />
+    </LinearLayout>
+
+</LinearLayout>

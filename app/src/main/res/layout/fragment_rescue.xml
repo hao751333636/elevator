@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:background="@color/actionbar">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/actionbar_back"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="智慧电梯管理平台"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionbar"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llCall"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:background="@mipmap/ic_rescue_tab_alarm_elevator" />
+
+            <TextView
+                android:id="@+id/tvCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_white_normal"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_2"
+                android:paddingLeft="@dimen/dimen_8"
+                android:paddingRight="@dimen/dimen_8"
+                android:paddingTop="@dimen/dimen_2"
+                android:text="报警电梯"
+                android:textColor="@color/actionbar"
+                android:textSize="@dimen/dimen_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRescue"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:background="@mipmap/ic_rescue_tab_rescue" />
+
+            <TextView
+                android:id="@+id/tvRescue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_2"
+                android:paddingLeft="@dimen/dimen_8"
+                android:paddingRight="@dimen/dimen_8"
+                android:paddingTop="@dimen/dimen_2"
+                android:text="救援列表"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRecord"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:background="@mipmap/ic_rescue_tab_record" />
+
+            <TextView
+                android:id="@+id/tvRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_2"
+                android:paddingLeft="@dimen/dimen_8"
+                android:paddingRight="@dimen/dimen_8"
+                android:paddingTop="@dimen/dimen_2"
+                android:text="处置记录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llOrder"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:background="@mipmap/ic_rescue_tab_artificial" />
+
+            <TextView
+                android:id="@+id/tvOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_2"
+                android:paddingLeft="@dimen/dimen_8"
+                android:paddingRight="@dimen/dimen_8"
+                android:paddingTop="@dimen/dimen_2"
+                android:text="人工下单"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llComplaint"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:background="@mipmap/ic_rescue_tab_proposal" />
+
+            <TextView
+                android:id="@+id/tvComplaint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_2"
+                android:paddingLeft="@dimen/dimen_4"
+                android:paddingRight="@dimen/dimen_4"
+                android:paddingTop="@dimen/dimen_2"
+                android:text="投诉建议"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tabPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+</LinearLayout>

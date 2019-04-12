@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ExpandableList的一级菜单布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/radius_conner_listbackgrout"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_8"
+        android:paddingLeft="@dimen/dimen_36"
+
+        android:paddingTop="@dimen/dimen_8"
+        android:textColor="#000000"
+        android:textSize="@dimen/dimen_20sp"/>
+
+</LinearLayout>

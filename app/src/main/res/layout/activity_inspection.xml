@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:background="@color/actionbar">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/actionbar_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:text="@string/activity_inspection_management"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rlRecord"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/small_padding"
+                android:text="检验记录"
+                android:textColor="@color/black2"
+                android:textSize="@dimen/dimen_16sp"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tvRecord1"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/min_margin"
+                android:background="@color/actionbar"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlAwait"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvAwait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/small_padding"
+                android:text="待检电梯"
+                android:textColor="@color/black2"
+                android:textSize="@dimen/dimen_16sp"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tvAwait1"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/min_margin"
+                android:background="@color/actionbar"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlTimeout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvTimeout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/small_padding"
+                android:text="超期未检"
+                android:textColor="@color/black2"
+                android:textSize="@dimen/dimen_16sp"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tvTimeout1"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/min_margin"
+                android:background="@color/actionbar"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="?android:actionBarDivider"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpInspectionManagement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

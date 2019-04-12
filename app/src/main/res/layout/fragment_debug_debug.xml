@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_10"
+            android:background="@color/drawable_bg"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_120"
+            android:background="@mipmap/ic_monitor_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte101_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte102"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte102_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte103"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte103_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte104"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte104_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte105"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte105_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte106"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte106_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte107"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte107_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte108"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte108_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte109"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte109_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte110"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte110_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte111_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte112"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte112_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte113"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte113_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte114"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte114_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte115"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte115_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte116"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte116_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte201"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte201_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte202"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte202_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte203"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte203_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte204"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte204_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte205"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte205_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte206"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte206_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte207"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte207_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte208"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte208_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte209"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte209_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte210"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte210_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte211"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte211_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte212"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte212_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte213"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte213_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte214"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte214_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte215"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte215_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvByte216"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_22sp"
+                        android:textStyle="bold" />
+
+                    <com.sinodom.elevator.view.FlickerTextView
+                        android:id="@+id/tvByte216_line"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_3"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_80"
+                android:background="@mipmap/ic_monitor_menu" />
+
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_monitor_back" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="265dp"
+            android:layout_height="265dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/ic_monitor_btn_bg">
+
+            <TextView
+                android:id="@+id/tvConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/ic_monitor_btn_confirm"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="@color/actionbar"
+                android:textSize="@dimen/dimen_28sp" />
+
+            <ImageView
+                android:id="@+id/ivUp"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_60"
+                android:layout_above="@+id/tvConfirm"
+                android:layout_centerHorizontal="true"
+                android:scaleType="center"
+                android:src="@drawable/btn_monitor_up_select" />
+
+            <ImageView
+                android:id="@+id/tvDown"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_60"
+                android:layout_below="@+id/tvConfirm"
+                android:layout_centerHorizontal="true"
+                android:scaleType="center"
+                android:src="@drawable/btn_monitor_down_select" />
+
+            <ImageView
+                android:id="@+id/tvLeft"
+                android:layout_width="@dimen/dimen_60"
+                android:layout_height="@dimen/dimen_100"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tvConfirm"
+                android:scaleType="center"
+                android:src="@drawable/btn_monitor_left_select" />
+
+            <ImageView
+                android:id="@+id/tvRight"
+                android:layout_width="@dimen/dimen_60"
+                android:layout_height="@dimen/dimen_100"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tvConfirm"
+                android:scaleType="center"
+                android:src="@drawable/btn_monitor_right_select" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

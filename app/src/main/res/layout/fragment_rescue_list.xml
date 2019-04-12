@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/drawable_bg"
+        android:dividerHeight="@dimen/dimen_5"
+        ptr:ptrListViewExtrasEnabled="false" />
+
+    <include layout="@layout/item_no_data" />
+
+</RelativeLayout>

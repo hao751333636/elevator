@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_381902">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_13sp" />
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15"
+            android:text="保存"
+            android:textColor="@color/camera_progress_three"
+            android:textSize="@dimen/dimen_13sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/rl_title"
+        android:background="@color/saddlebrown" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line">
+
+        <!--<ScrollView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1">-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/et_send_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="top"-->
+        <!--android:hint="呵呵呵呵呵呵呵呵"-->
+        <!--android:minHeight="@dimen/dimen_66"-->
+        <!--android:paddingLeft="@dimen/dimen_15"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textColorHint="@color/gray"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:textSize="@dimen/dimen_16sp" />-->
+        <!--</ScrollView>-->
+
+        <ImageView
+            android:id="@+id/iv_video_screenshot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+</RelativeLayout>

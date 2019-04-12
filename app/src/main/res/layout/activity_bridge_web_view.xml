@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:background="@color/actionbar"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/actionbar_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:text="@string/activity_maintenance"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivScanning"
+            android:layout_width="@dimen/max_padding"
+            android:layout_height="@dimen/max_padding"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/large_margin"
+            android:src="@mipmap/scanning_48dp" />
+
+    </RelativeLayout>
+
+    <!--<com.handmark.pulltorefresh.library.PullToRefreshWebView xmlns:ptr="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/pull_refresh_webview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--ptr:ptrMode="pullFromStart" />-->
+
+    <com.github.lzyzsd.jsbridge.BridgeWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/llError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="页面加载失败"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <Button
+            android:id="@+id/bFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_36"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@drawable/btn_blue"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10"
+            android:text="关闭"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_14sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/llDialog"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/llCity"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/radius_conner_backgroud2">
+
+            <TextView
+                android:id="@+id/tvCity"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_8"
+                android:text="市（全部）"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/dimen_14sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_choice1"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/llZone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/radius_conner_backgroud2">
+
+            <TextView
+                android:id="@+id/tvZone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_8"
+                android:text="区（全部）"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/dimen_14sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_choice1"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llUse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/radius_conner_backgroud2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:text="使用单位"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/dimen_14sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:text="全部"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/dimen_14sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_choice2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/radius_conner_backgroud2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:text="维保单位"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/dimen_14sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:text="全部"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/dimen_14sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_choice2"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llShieldingState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/radius_conner_backgroud2">
+
+        <TextView
+            android:id="@+id/tvShieldingState"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:text="屏蔽状态（全部）"
+            android:textColor="@color/black1"
+            android:textSize="@dimen/dimen_14sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_choice1"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llShieldingCause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/radius_conner_backgroud2">
+
+        <TextView
+            android:id="@+id/tvShieldingCause"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:text="屏蔽原因（全部）"
+            android:textColor="@color/black1"
+            android:textSize="@dimen/dimen_14sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_choice1"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_32"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/white"
+            android:background="@color/bg_gray"/>
+
+        <TextView
+            android:id="@+id/tvReset"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="重置"
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/white"
+            android:background="@color/text_yellow"/>
+
+
+        <TextView
+            android:id="@+id/tvYes"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="确定"
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/white"
+            android:background="@color/actionbar"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

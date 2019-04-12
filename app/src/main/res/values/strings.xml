@@ -1,0 +1,52 @@
+<resources>
+
+    <!--<string name="app_name">电梯云</string>-->
+
+    <!-- Activity -->
+    <string name="activity_main">首页</string>
+    <string name="activity_work_record">检验列表</string>
+    <string name="activity_survey">调查</string>
+    <string name="activity_inspection">检验服务</string>
+    <string name="activity_internet_alarm">报警仪联网</string>
+    <string name="activity_inspection_management">电梯年检</string>
+    <string name="activity_maintenance">电梯维保</string>
+    <string name="activity_record_details">记录详情</string>
+    <string name="activity_historical_details">维保历史</string>
+    <string name="activity_shielding_management">屏蔽管理</string>
+    <string name="activity_monitor">物联监控</string>
+    <string name="activity_property_inspection_details">巡查详细</string>
+    <string name="activity_warning_analysis">预警分析</string>
+    <string name="activity_change_password">修改密码</string>
+
+    <!-- 动作 -->
+    <string name="action_confirm">确定</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_login">登录</string>
+
+    <!-- label 标签 -->
+    <string name="label_none"></string>
+    <string name="label_loading">加载中...</string>
+    <string name="label_notice">提示</string>
+    <string name="label_push_again_to_exit">再按一次退出程序</string>
+
+    <!-- hint 提示 -->
+    <string name="hint_input_register_phone">请输入手机号码</string>
+    <string name="hint_input_register_yzm">请输入验证码</string>
+    <string name="hint_input_old_pwd">请输入原密码</string>
+    <string name="hint_input_register_pwd">请输入密码</string>
+    <string name="hint_input_register_pwd_agarn">请再次输入密码</string>
+
+
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_GET_ACCOUNTS</string>
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CALL_PHONE</string>
+    <string name="permission_camera_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CAMERA</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_COARSE_LOCATION</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_RECORD_AUDIO</string>
+    <string name="title_activity_complaint">ComplaintActivity</string>
+
+
+</resources>

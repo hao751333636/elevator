@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:background="@color/actionbar">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/actionbar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:text="检验签字"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivScanning"
+            android:layout_width="@dimen/max_padding"
+            android:layout_height="@dimen/max_padding"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/large_margin"
+            android:src="@mipmap/scanning_48dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llType"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_45"
+        android:background="@drawable/bg_ll"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:text=""
+            android:textColor="@color/black1"
+            android:textSize="@dimen/dimen_14sp" />
+
+        <View
+            android:layout_width="0.0dp"
+            android:layout_height="1.0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_22"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:src="@mipmap/ic_arrow_right" />
+    </LinearLayout>
+
+    <include layout="@layout/view_divider_h" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="请在此处签名："
+            android:textColor="@color/black1"
+            android:textSize="@dimen/dimen_14sp" />
+
+        <TextView
+            android:id="@+id/tvClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_sign_clear" />
+    </LinearLayout>
+
+    <com.sinodom.elevator.view.LinePathView
+        android:id="@+id/lpView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/tvCommit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_blue_right"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_18sp" />
+
+</LinearLayout>

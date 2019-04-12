@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/dimen_8">
+
+    <TextView
+        android:id="@+id/mItemEleListTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.这是标题"
+        android:textColor="@color/black1"
+        android:textSize="@dimen/dimen_14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/tiny_padding"
+        android:background="@drawable/radius_conner_listbackgrout2">
+
+        <LinearLayout
+            android:id="@+id/llQualified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_8">
+
+            <ImageView
+                android:id="@+id/ivQualified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/qualified"/>
+
+            <TextView
+                android:id="@+id/tvQualified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:text="合格"
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/black3"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="?android:actionBarDivider"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/llUnqualified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_8"
+            >
+
+            <ImageView
+                android:id="@+id/ivUnqualified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/qualified"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:text="不合格"
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/black3"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/big_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/ivPictures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/tiny_padding"
+            android:src="@mipmap/ic_camera"/>
+
+        <EditText
+            android:id="@+id/mItemEleListEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ivPictures"
+            android:hint="写下您的意见"
+            android:maxLength="255"
+            android:padding="@dimen/normal_margin"
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/black1"
+            android:background="@drawable/radius_conner_backgroud2"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
