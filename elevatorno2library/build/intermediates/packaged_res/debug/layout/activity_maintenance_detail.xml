@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        tools:context=".activity.MaintenanceDetailActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册代码"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21321433124"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="#7f7f7f"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="项目名称"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="巴拉巴拉"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="#7f7f7f"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="内部编号"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shenhe"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="#7f7f7f"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="维保类别"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="半月"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="#7f7f7f"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="维保人员"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="#7f7f7f"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="维保到期时间"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="#7f7f7f"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="联系方式"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="#7f7f7f"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="使用单位"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="沈阳市"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="#7f7f7f"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="维保单位"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="沈阳市"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="#7f7f7f"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="主管审核"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+        <ImageView
+            android:id="@+id/ivManagerCheck"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/shape_white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="#7f7f7f"
+            app:layout_constraintTop_toBottomOf="@+id/ivManagerCheck" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="物业审核"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+        <ImageView
+            android:id="@+id/ivWuyCheck"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/shape_white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="#7f7f7f"
+            app:layout_constraintTop_toBottomOf="@+id/ivWuyCheck" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="位置信息"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="#7f7f7f"
+            app:layout_constraintTop_toBottomOf="@+id/bmapView" />
+
+        <com.allen.library.SuperButton
+            android:id="@+id/btnStartWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开始维保"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/view12"
+            app:sCornersRadius="10dp"
+            android:layout_marginTop="10dp"
+            app:sShapeType="rectangle"
+            app:sSolidColor="#157efb" />
+
+        <com.allen.library.SuperButton
+            android:id="@+id/btnStopWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="无法维保"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/btnStartWork"
+            app:sCornersRadius="10dp"
+            app:sShapeType="rectangle"
+            app:sSolidColor="#fc3d39" />
+
+        <com.allen.library.SuperButton
+            android:id="@+id/btnOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="接单"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/btnStopWork"
+            app:sCornersRadius="10dp"
+            android:layout_marginTop="10dp"
+            app:sShapeType="rectangle"
+            app:sSolidColor="#157efb" />
+
+        <com.allen.library.SuperButton
+            android:id="@+id/btnRefused"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="拒绝"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/btnOrder"
+            app:sCornersRadius="10dp"
+            app:sShapeType="rectangle"
+            app:sSolidColor="#fc3d39" />
+        <com.allen.library.SuperButton
+            android:id="@+id/btnSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查看维保内容"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/btnRefused"
+            app:sCornersRadius="10dp"
+            android:layout_marginTop="10dp"
+            app:sShapeType="rectangle"
+            app:sSolidColor="#157efb" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

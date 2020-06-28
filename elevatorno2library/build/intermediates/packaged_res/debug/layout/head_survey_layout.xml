@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvBasicPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出场编号：121654"
+            android:textColor="#000"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAfterCheckPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="单位内编号：121654"
+            android:textColor="#000"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@+id/tvBasicPrice"
+            app:layout_constraintTop_toBottomOf="@+id/tvBasicPrice" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@mipmap/ic_enl_work"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="材料勘查"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+</LinearLayout>

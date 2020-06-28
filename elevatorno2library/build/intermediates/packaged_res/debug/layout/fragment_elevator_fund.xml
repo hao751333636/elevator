@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/shape_white"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="20dp"
+    tools:context=".activity.MaintenanceListActivity">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请日期：2020年1月2日 09:20"
+        android:textColor="#b9b9b9"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvState"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvState" />
+
+    <TextView
+        android:id="@+id/tvState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="待勘查"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="10dp"
+        android:background="#70000000"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+
+    <TextView
+        android:id="@+id/tvNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="注册码：1154132153543"
+        android:textColor="#12568c"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvDate"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+    <TextView
+        android:id="@+id/tvAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="安装地址：啊啊啊"
+        android:textColor="#b9b9b9"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvNo" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="制造单位：啊阿斯顿撒旦撒"
+        android:textColor="#b9b9b9"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdd" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btnApplication"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="申请表"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toLeftOf="@+id/tvDate"
+        app:layout_constraintRight_toLeftOf="@+id/btnDetail"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:sCornersRadius="5dp"
+        app:sSolidColor="#7DC1F6" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btnDetail"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:text="基本情况"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toRightOf="@+id/btnApplication"
+        app:layout_constraintRight_toLeftOf="@+id/btnBook"
+        app:layout_constraintTop_toTopOf="@+id/btnApplication"
+        app:sCornersRadius="5dp"
+        app:sSolidColor="#7DC1F6" />
+
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btnBook"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:text="预算书"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toRightOf="@+id/btnDetail"
+        app:layout_constraintRight_toLeftOf="@+id/btnAcceptance"
+        app:layout_constraintTop_toTopOf="@+id/btnApplication"
+        app:sCornersRadius="5dp"
+        app:sSolidColor="#7DC1F6" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btnAcceptance"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:text="验收"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toRightOf="@+id/btnBook"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnApplication"
+        android:visibility="visible"
+        app:sCornersRadius="5dp"
+        app:sSolidColor="#7DC1F6" />
+
+
+</android.support.constraint.ConstraintLayout>

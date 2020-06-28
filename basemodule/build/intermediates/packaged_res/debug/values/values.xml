@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="waveSideBarLetters">
+        <item>\u2606</item>
+        <item>\u0023</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </array>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#1A77BD</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="white">#FFFFFF</color>
+    <declare-styleable name="waveSideBar">
+        <attr format="color|reference" name="textColor"/>
+        <attr format="color|reference" name="backgroundColor"/>
+        <attr format="color|reference" name="chooseTextColor"/>
+        <attr format="dimension" name="textSize"/>
+        <attr format="dimension" name="hintTextSize"/>
+        <attr format="dimension" name="radius"/>
+        <attr format="dimension" name="circleRadius"/>
+    </declare-styleable>
+    <dimen name="chooseTextSize">12sp</dimen>
+    <dimen name="circleRadius">24dp</dimen>
+    <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="hintTextSize">32sp</dimen>
+    <dimen name="padding">20dp</dimen>
+    <dimen name="radius">20dp</dimen>
+    <dimen name="textSize">10sp</dimen>
+    <string name="app_name">BaseModule</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="CustomDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorAccent">#5a5ef0</item>
+    </style>
+    <style name="NoTitleTranslucentTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

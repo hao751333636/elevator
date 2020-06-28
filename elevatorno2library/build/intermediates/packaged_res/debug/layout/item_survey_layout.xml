@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/shape_white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="材料1：额音量2个 20元一个"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="应修理数："
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edtCheckNum"
+        app:layout_constraintLeft_toLeftOf="@+id/tvTitle"
+        app:layout_constraintTop_toTopOf="@+id/edtCheckNum" />
+
+    <EditText
+        android:id="@+id/edtCheckNum"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:gravity="left"
+        android:hint="请填写评估数量"
+        android:inputType="number"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"
+        android:textColor="#ff333333"
+        android:textColorHint="#ff999999"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@+id/tvName2"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="勘查情况："
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/edtCheckNum" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/rgGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvName3">
+
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio_select"
+            android:drawablePadding="15dp"
+            android:text="调校"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio_select"
+            android:drawablePadding="15dp"
+            android:text="维修"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@+id/cb1"
+            app:layout_constraintTop_toTopOf="@+id/cb1" />
+
+
+        <CheckBox
+            android:id="@+id/cb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio_select"
+            android:drawablePadding="15dp"
+            android:text="更换零部件"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@+id/cb2"
+            app:layout_constraintTop_toTopOf="@+id/cb1" />
+
+        <CheckBox
+            android:id="@+id/cb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio_select"
+            android:drawablePadding="15dp"
+            android:text="整体更换"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@+id/cb1"
+            app:layout_constraintTop_toBottomOf="@+id/cb1" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/rgGroup" />
+
+    <TextView
+        android:id="@+id/tvName4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="备注："
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edtRemarks"
+        app:layout_constraintLeft_toLeftOf="@+id/tvTitle"
+        app:layout_constraintTop_toTopOf="@+id/edtRemarks" />
+
+    <EditText
+        android:id="@+id/edtRemarks"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:gravity="left"
+        android:hint="请填写备注"
+        android:inputType="number"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"
+        android:textColor="#ff333333"
+        android:textColorHint="#ff999999"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@+id/tvName2"
+        app:layout_constraintTop_toBottomOf="@+id/rvList" />
+</android.support.constraint.ConstraintLayout>

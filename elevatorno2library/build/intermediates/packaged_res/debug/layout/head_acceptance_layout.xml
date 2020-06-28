@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册码：121654"
+            android:textColor="#12568c"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvApplyPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小区：121654"
+            android:textColor="#000"
+            android:layout_marginTop="2dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvAfterCheckPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小区地址：121654"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@mipmap/ic_enl_date"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="工时验收"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@null"
+                android:layout_weight="0.5"
+                android:drawablePadding="15dp"
+                android:text="按时完成"
+                android:textSize="14sp"
+                android:drawableLeft="@drawable/radio_select"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_weight="0.5"
+                android:text="延迟完成"
+                android:drawablePadding="15dp"
+                android:textSize="14sp"
+                android:drawableLeft="@drawable/radio_select"
+                android:button="@null" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@mipmap/ic_enl_work"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="项目验收"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+</LinearLayout>

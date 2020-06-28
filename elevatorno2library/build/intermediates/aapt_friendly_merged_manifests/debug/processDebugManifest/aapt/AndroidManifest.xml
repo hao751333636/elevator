@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sindom.elevatorno2library"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="28" />
+
+    <application
+        android:appComponentFactory="@string/app_name"
+        tools:replace="android:appComponentFactory" >
+        <activity android:name="com.sindom.elevatorno2library.activity.MaintenanceDetailActivity" />
+        <activity
+            android:name="com.sindom.elevatorno2library.activity.fund.AcceptanceActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.sindom.elevatorno2library.activity.fund.SignActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.sindom.elevatorno2library.activity.fund.SurveySignActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.sindom.elevatorno2library.activity.fund.ElevatorSurveyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.sindom.elevatorno2library.activity.fund.BudgetBookActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.sindom.elevatorno2library.activity.fund.ElevatorDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.sindom.elevatorno2library.activity.fund.ApplyFundActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.sindom.elevatorno2library.activity.MaintenanceListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.sindom.elevatorno2library.activity.ElevatorCalendarActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.sindom.elevatorno2library.activity.ElevatorMaintenanceActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.sindom.elevatorno2library.activity.fund.ElevatorFundActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+    </application>
+
+</manifest>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activity.MaintenanceListActivity"
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:background="#fff"
+    android:paddingRight="15dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="到期时间：2020年1月2日 09:20"
+        android:textSize="14sp"
+        android:textColor="#b9b9b9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册代码：1154132153543"
+        android:textSize="16sp"
+        android:textColor="#12568c"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate"
+        app:layout_constraintLeft_toLeftOf="@+id/tvDate"/>
+
+    <TextView
+        android:id="@+id/tvAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="安装地址：啊啊啊"
+        android:textSize="14sp"
+        android:textColor="#b9b9b9"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvNo"
+        app:layout_constraintLeft_toLeftOf="@+id/tvDate"/>
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="维保类型：半月"
+        android:textSize="14sp"
+        android:textColor="#12568c"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdd"
+        app:layout_constraintLeft_toLeftOf="@+id/tvDate"/>
+
+    <TextView
+        android:id="@+id/tvPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="维保人员：张三"
+        android:textSize="14sp"
+        android:textColor="#12568c"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvType"
+        app:layout_constraintLeft_toLeftOf="@+id/tvDate"/>
+
+    <TextView
+        android:id="@+id/tvExpired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已超期3天"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdd"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
